@@ -18,6 +18,8 @@
 
 <!--------------------- Splash screen ------------------------------>
     <main id="splash-screen">
+        <!-- <p>Collect the collectibles by jumping with the <strong>'up' arrow</strong> on your keyboard,
+             but be careful of the bad guys (and your surroundings) !</p> -->
         <img src="./img/yellow-duck-splashscreen.png" class="player-splash">
     </main>
 
@@ -27,11 +29,14 @@
     </main>
 
 <!--------------------- Game-over screen ------------------------->
-    <main id="game-over">
+    <main id="gameover-screen">
+        <h1 id="game-over-txt">Game Over :(</h1>
         <img src="./img/yellow-duck-gameover.png" class="player-gameover">
     </main>
 
 <!----------------------- JS links ------------------------------>
+    <script src="./src/collectibles.js"></script>
+    <script src="./src/obstacles.js"></script>
     <script src="./src/duck.js"></script>
     <script src="./src/game.js"></script>
     <script src="./src/index.js"></script>

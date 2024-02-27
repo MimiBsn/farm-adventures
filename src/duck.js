@@ -21,27 +21,32 @@ class Duck {
         this.duckPlayer.style.height = `${this.height}px`;
         this.duckPlayer.style.left = `${this.left}px`;
         this.duckPlayer.style.top = `${this.top}px`;
-        // put the player on the screen after we set all the properties
         this.gameScreen.appendChild(this.duckPlayer);
-        // this.isJumping = false;
+        this.isJumping = false;
     }
 
     move(){
-        if (this.left >= 30 && this.left + this.width <= 500) {
-           
-            this.top += this.directionY;
-        this.updatePosition();
-    }   
+          if(this.isJumping && this.top > 100) //Set a top limit for the duck's jump
+          {
+            this.directionY = -3;
+          } else {
+           if(this.top < 380){
+            this.directionY = 3;
+           }else{
+            this.directionY = 0;
+           }
+          }
+          this.top += this.directionY;
+        this.updatePosition();  
     }
 
     updatePosition(){
-        console.log(this.top)
-        this.duckPlayer.top = `${this.top}px`;
+        this.duckPlayer.style.top = `${this.top}px`;
     }
 
-    didCollide(obstacles){
+    didCollide(obstacle){
         const duckRect = this.duckPlayer.getBoundingClientRect();
-        const ennemiesRect = obstacles.element.getBoundingClientRect();
+        const ennemiesRect = obstacle.obstacle.getBoundingClientRect();
 
         if (
             duckRect.left < ennemiesRect.right &&
@@ -55,9 +60,9 @@ class Duck {
           }
     }
 
-    didCollect(collectibles){
+    didCollect(collectible){
         const duckRect = this.duckPlayer.getBoundingClientRect();
-        const collectRect = collectibles.element.getBoundingClientRect();
+        const collectRect = collectible.collectible.getBoundingClientRect();
 
         if (
             duckRect.left < collectRect.right &&

@@ -16,11 +16,11 @@ musicBtn.addEventListener("click", () => {
 document.addEventListener("keydown", (event) =>{
     console.log("event")
     if (event.code === "ArrowUp") {
-        game.player.directionY = -30;
+        game.player.isJumping = true;
       }
 });
 
 document.addEventListener("keyup", () =>{ 
-    game.player.directionY = 0;
+    game.player.isJumping = false;
 });
 }
