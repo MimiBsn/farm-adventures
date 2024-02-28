@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-image: url(./img/landscape-barn-tractor-byday.jpg);
     background-size: cover;
-    background-position: 0 -8.6em;
+    background-position: 0 -6em;
     background-repeat: no-repeat;
     background-color: rgb(110,125,148);
     /*animation: slide 10s linear infinite;*/
@@ -92,12 +92,12 @@ body {
 
 .player-splash{
     height: 4em;
-    margin-top: 17.1em;
+    margin-top: 19.6em;
     margin-left: 25em;
 }
 
 .player-gameover{
-    margin-top: 4.8em;
+    margin-top: 7.4em;
     margin-left: 30em;
 } 
 

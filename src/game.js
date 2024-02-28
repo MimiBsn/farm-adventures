@@ -10,18 +10,20 @@ class Game {
         this.player = new Duck (
             this.gameScreen,
             400,
-            380,
+            420,
             92,
             72,
-            "../img/yellow-duck-moving.png");
+            ["../img/yellow-duck-moving.png", "../img/yellow-duck.png"]);
         this.collectibles = [];
         this.obstacles = [];
-        this.lives = 1;
+        this.lives = 2;
         this.score = 0;
         this.gameIsOver = false;
         this.gameIntervalId = 0;
         this.gameLoopFrequency = Math.round(1000 / 60);
         this.counter = 0;
+        this.song = new Audio("../song.mp3");
+        this.song.volume = 0.05;
 
     }
 
@@ -32,7 +34,7 @@ class Game {
             this.gameLoop();
             this.counter++;
         }, this.gameLoopFrequency);
-
+        this.song.play();
         /* TO DO : Loop all backgrounds */
         // document.body.style.backgroundImage = "url(../img/countryside-landscape-farm-day.jpg)";
         // document.body.style.backgroundPosition = "0 -7.91em";
@@ -40,7 +42,7 @@ class Game {
 
     restart(){
         this.gameIsOver = false;
-        this.lives = 1;
+        this.lives = 2;
         this.score = 0;
         this.gameOverScreen.style.display = "none";
         this.gameScreen.style.display = "block";
@@ -54,7 +56,7 @@ class Game {
             clearInterval(this.gameIntervalId);
             this.gameOver();
             this.scoreElement.innerText = this.score = 0;
-            this.livesElement.innerText = this.lives = 1;
+            this.livesElement.innerText = this.lives = 2;
             this.player.top = 380;
         }
     }
@@ -109,6 +111,7 @@ class Game {
         })
         this.collectibles = [];
         this.obstacles = [];     
+        this.song.pause();
     }
 
 

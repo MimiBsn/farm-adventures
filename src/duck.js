@@ -15,7 +15,7 @@ class Duck {
         this.directionY = 0;
         //creating the element, setting the src and everything else
         this.duckPlayer = document.createElement("img");
-        this.duckPlayer.src = imgSrc;
+        this.duckPlayer.src = [imgSrc, imgSrc];
         this.duckPlayer.style.position = "absolute";
         this.duckPlayer.style.width = `${this.width}px`;
         this.duckPlayer.style.height = `${this.height}px`;
@@ -28,10 +28,10 @@ class Duck {
     move(){
           if(this.isJumping && this.top > 100) //Set a top limit for the duck's jump
           {
-            this.directionY = -3;
+            this.directionY = -4;
           } else {
-           if(this.top < 380){
-            this.directionY = 3;
+           if(this.top < 420){
+            this.directionY = 5;
            }else{
             this.directionY = 0;
            }

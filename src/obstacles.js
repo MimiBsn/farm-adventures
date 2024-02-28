@@ -2,12 +2,12 @@ class Obstacles {
     constructor (gameScreen){
         this.gameScreen = gameScreen;
         
-        this.top =  Math.floor(Math.random() * (380 - 100) + 100);
+        this.top =  Math.floor(Math.random() * (420 - 100) + 100);
         this.left = 1100;
-        this.width = 100;
+        this.width = 150;
         this.height = 100;
         this.obstacle = document.createElement("img");
-        this.obstacle.src = "../img/attacking-goose.png";
+        this.obstacle.src = "../img/racoon.png";
         this.obstacle.style.position = "absolute";
         this.obstacle.style.width = `${this.width}px`;
         this.obstacle.style.height = `${this.height}px`;

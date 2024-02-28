@@ -2,12 +2,12 @@ class Collectibles {
     constructor (gameScreen){
         this.gameScreen = gameScreen;
         
-        this.top =  Math.floor(Math.random() * (-380 - -580) + 100);
+        this.top =  Math.floor(Math.random() * (-420 - -580) + 100);
         this.left = 1100;
         this.width = 100;
         this.height = 100;
         this.collectible = document.createElement("img");
-        this.collectible.src = "../img/cute-duck-player.png";
+        this.collectible.src = "../img/vegetables.png";
         this.collectible.style.position = "absolute";
         this.collectible.style.width = `${this.width}px`;
         this.collectible.style.height = `${this.height}px`;
