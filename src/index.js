@@ -1,12 +1,18 @@
 window.onload = function (){
 
 const startBtn = document.querySelector("#start-game");
+const restartBtn = document.querySelector("#restart-game");
 const musicBtn = document.querySelector("#music")
 const game = new Game();
 
 startBtn.addEventListener("click", function (){
-    console.log("Start Game");
     game.startGame();
+    startBtn.style.display = "none";
+});
+
+restartBtn.addEventListener("click", function (){
+    game.restart();
+    restartBtn.style.display = "none";
 });
 
 musicBtn.addEventListener("click", () => {
@@ -14,7 +20,6 @@ musicBtn.addEventListener("click", () => {
 });
         /*Make the player jump */
 document.addEventListener("keydown", (event) =>{
-    console.log("event")
     if (event.code === "ArrowUp") {
         game.player.isJumping = true;
       }
@@ -23,4 +28,5 @@ document.addEventListener("keydown", (event) =>{
 document.addEventListener("keyup", () =>{ 
     game.player.isJumping = false;
 });
+
 }

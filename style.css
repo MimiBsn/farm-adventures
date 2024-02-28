@@ -47,6 +47,13 @@ body {
     height : 3em;
 }
 
+#restart-game {
+    display: none;
+    margin-right: 2em;
+    width : 8em;
+    height : 3em;
+}
+
 #music {
     width : 6em;
     height : 3em;
@@ -88,13 +95,7 @@ body {
     margin-top: 17.1em;
     margin-left: 25em;
 }
-/*
-.player{
-    height: 5em;
-    margin-top: 16.51em; 
-    margin-left: 25em; 
-}
-*/
+
 .player-gameover{
     margin-top: 4.8em;
     margin-left: 30em;

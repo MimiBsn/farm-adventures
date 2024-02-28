@@ -17,7 +17,7 @@ class Collectibles {
         }
 
         move(){
-            this.left -= 3;
+            this.left -= 4;
             this.updatePosition();
         }
 

@@ -12,27 +12,30 @@
         <h1>Hello World</h1>
     <div id="buttons">
         <button id="start-game">Start Game</button>
+        <button id="restart-game">Restart Game</button>
         <button id="music">Music Off</button>
     </div>
     </header>
 
 <!--------------------- Splash screen ------------------------------>
-    <main id="splash-screen">
+    <div id="splash-screen">
         <!-- <p>Collect the collectibles by jumping with the <strong>'up' arrow</strong> on your keyboard,
              but be careful of the bad guys (and your surroundings) !</p> -->
         <img src="./img/yellow-duck-splashscreen.png" class="player-splash">
-    </main>
+    </div>
 
 <!---------------------- Game screen ------------------------------>
-    <main id="game-screen">
+    <div id="game-screen">
+        <p>Score: <span id="score">0</span></p>
+        <p>Lives: <span id="lives">1</span></p>
         <!-- <img src="./img/yellow-duck-moving.png" class="player"> -->
-    </main>
+    </div>
 
 <!--------------------- Game-over screen ------------------------->
-    <main id="gameover-screen">
+    <div id="gameover-screen">
         <h1 id="game-over-txt">Game Over :(</h1>
         <img src="./img/yellow-duck-gameover.png" class="player-gameover">
-    </main>
+    </div>
 
 <!----------------------- JS links ------------------------------>
     <script src="./src/collectibles.js"></script>
