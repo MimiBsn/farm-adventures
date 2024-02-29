@@ -11,42 +11,17 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(./img/landscape-barn-tractor-byday.jpg);
-    background-size: cover;
+    background-image: url(./img/landscape-barn-tractor-byday.jpg);
     background-position: 0 -6em;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(110,125,148);
-    
-}
-/* #sliding-bg{
-    background: 
-    url(./img/landscape-barn-tractor-byday.jpg) 
-    url(./img/countryside-landscape-farm-day.jpg)
-    url(./img/landscape-barn-by-night.jpg)
-    url(./img/landscape-by-night.jpg)
-    url(./img/landscape-sun-rising.jpg)
-    repeat-x;
-    animation: slide 60s linear infinite;
-}
-@keyframes slide {
-    0% {
-        transform: translate3d(0, 0, 0)
-    }
-    /* 95% {
-      background-position: 0 0;
-    } */
-    /*100% {
-        transform: translate3d(-1692px, 0, 0);
-    }
-  } */
+} 
          
                         /**********HEADER***********/
 #fixed-header {
     margin: 0;
     padding: 0;
-    /* background-color: blueviolet; */
-    /* height: 5.5em; */
-    /* position: absolute; */
     width: 100%;
 }
 
@@ -113,15 +88,20 @@ p{
 
 #splash-screen{
     width : 100%;
-    height : 20.29em;
-    /* background-color: cornflowerblue; */
-    
+    height : 20.29em;   
+}
+
+#splash-screen p{
+    width : 500px;
+    /* font-size: 1.1em; */
+    line-height: 22px;
+    text-align: justify;
+    padding-left: 20em;
 }
 
 #game-screen{
     width : 100vh;
     height : 20.29em;
-    /* background-color: fuchsia; */
     display : none;
 }
 
@@ -130,7 +110,6 @@ p{
 #gameover-screen{
     width : 100%;
     height : 20.29em;
-    /* background-color: gold; */
     display: none;    
 }
 
@@ -138,12 +117,13 @@ p{
     padding-top: 0.5em;
     padding-left: 8.5em;
     font-size: 48px;
+
     
 }
 
 .player-splash{
     height: 4em;
-    margin-top: 17.6em;
+    margin-top: 9.7em;
     margin-left: 25em;
 }
 

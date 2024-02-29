@@ -2,7 +2,7 @@ class Obstacles {
     constructor (gameScreen){
         this.gameScreen = gameScreen;
         this.top =  Math.floor(Math.random() * (420 - 100) + 100);
-        this.left = 1100;
+        this.left = 1160;
         this.obstacle = document.createElement("img");
         this.obstacleArr =["./img/racoon.png",
         "./img/angry-cat.png",
