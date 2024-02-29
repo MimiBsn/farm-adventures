@@ -2,6 +2,7 @@
 ## Farm Adventures 👩‍🌾
 
 ### I'm Alexandra BUSSON and this is my mini game in `JS`, `HTML` and `CSS` for module 01
+
 ![giphy](https://github.com/MimiBsn/farm-adventures/assets/159456749/0ad653fe-fd86-48d5-8997-3adefafebcf8)
 
 ## Introduction
