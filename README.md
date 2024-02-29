@@ -19,3 +19,4 @@ But be careful, Ducky only has 2 lifes (which is already awesome for a chick🪄
 ### I hope you will enjoy my game, thanks for reading ✨
 # To play -> https://mimibsn.github.io/farm-adventures/
 
+✨ Tp finish, I'd like to thanks our amazing teachers Joshua and Felipe for helping us solve problems that we faced this week ✨ 
