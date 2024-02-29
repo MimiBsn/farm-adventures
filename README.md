@@ -2,6 +2,7 @@
 ## Farm Adventures 👩‍🌾
 
 ### I'm Alexandra BUSSON and this is my mini game in `JS`, `HTML` and `CSS` for module 01
+
 ![giphy](https://github.com/MimiBsn/farm-adventures/assets/159456749/0ad653fe-fd86-48d5-8997-3adefafebcf8)
 
 ## Introduction
@@ -16,3 +17,5 @@ The more you collect food, the more you score points but also fuller will be Duc
 But be careful, Ducky only has 2 lifes (which is already awesome for a chick🪄)
 
 ### I hope you will enjoy my game, thanks for reading ✨
+# To play -> https://mimibsn.github.io/farm-adventures/
+
