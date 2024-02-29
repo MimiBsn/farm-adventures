@@ -4,12 +4,12 @@ class Obstacles {
         this.top =  Math.floor(Math.random() * (420 - 100) + 100);
         this.left = 1100;
         this.obstacle = document.createElement("img");
-        this.obstacleArr =["../img/racoon.png",
-        "../img/angry-cat.png",
-        "../img/joker.png",
-        "../img/strong-cow.png",
-        "../img/farmer.png",
-        "../img/bat-rob.png"] ;
+        this.obstacleArr =["./img/racoon.png",
+        "./img/angry-cat.png",
+        "./img/joker.png",
+        "./img/strong-cow.png",
+        "./img/farmer.png",
+        "./img/bat-rob.png"] ;
         this.obstacle.src = this.obstacleArr[Math.floor(Math.random()* this.obstacleArr.length)];
         this.obstacle.style.position = "absolute";
         this.obstacle.style.left = `${this.left}px`;

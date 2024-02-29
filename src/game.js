@@ -22,7 +22,7 @@ class Game {
         this.gameIntervalId = 0;
         this.gameLoopFrequency = Math.round(1000 / 60);
         this.counter = 0;
-        this.song = new Audio("../song.mp3");
+        this.song = new Audio("./song.mp3");
         this.song.volume = 0.05;
 
     }

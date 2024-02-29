@@ -13,7 +13,7 @@ class Duck {
         this.height = playerHeight;
         this.directionY = 0;
         //creating the element, setting the src and everything else
-        this.duckImg = ["../img/yellow-duck.png", "../img/yellow-duck-moving.png"];
+        this.duckImg = ["./img/yellow-duck.png", "./img/yellow-duck-moving.png"];
         this.duckPlayer = document.createElement("img");
         this.duckImgIndex = 0;
         this.duckPlayer.src = this.duckImg[this.duckImgIndex];
