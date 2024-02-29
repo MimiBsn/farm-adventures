@@ -3,8 +3,8 @@ class Game {
         this.splashScreen = document.querySelector("#splash-screen");
         this.gameScreen = document.querySelector("#game-screen");
         this.gameOverScreen = document.querySelector("#gameover-screen");
-        this.restartBtn = document.querySelector("#restart-game")
-        /*TO DO: create score and lives in the HTML */
+        this.restartBtn = document.querySelector("#restart-game");
+        this.muteBtn = document.querySelector("#music");
         this.scoreElement = document.getElementById("score");
         this.livesElement = document.getElementById("lives");
         this.player = new Duck (
@@ -13,7 +13,7 @@ class Game {
             420,
             92,
             72,
-            ["../img/yellow-duck-moving.png", "../img/yellow-duck.png"]);
+            );
         this.collectibles = [];
         this.obstacles = [];
         this.lives = 2;
@@ -35,6 +35,7 @@ class Game {
             this.counter++;
         }, this.gameLoopFrequency);
         this.song.play();
+        this.muteBtn.style.display = "flex";
         /* TO DO : Loop all backgrounds */
         // document.body.style.backgroundImage = "url(../img/countryside-landscape-farm-day.jpg)";
         // document.body.style.backgroundPosition = "0 -7.91em";
@@ -46,12 +47,21 @@ class Game {
         this.score = 0;
         this.gameOverScreen.style.display = "none";
         this.gameScreen.style.display = "block";
-        this.startGame();     
+        this.startGame();    
     }
 
     gameLoop(){
         this.update();
-
+        if(this.counter % 30 === 0){
+            console.log(this.player.duckImgIndex, this.player.duckPlayer.src)
+            if(this.player.duckImgIndex === 0){
+                this.player.duckImgIndex = 1
+                this.player.duckPlayer.src = this.player.duckImg[1];
+            }else{
+                this.player.duckImgIndex = 0
+                this.player.duckPlayer.src = this.player.duckImg[0];
+            }
+        }
         if(this.gameIsOver){
             clearInterval(this.gameIntervalId);
             this.gameOver();
@@ -97,6 +107,7 @@ class Game {
 }
 
     gameOver(){
+        this.muteBtn.style.display = "none";
         this.restartBtn.style.display = "flex";
         this.restartBtn.style.justifyContent = "center";
         this.restartBtn.style.alignItems = "center";

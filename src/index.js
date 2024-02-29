@@ -16,10 +16,7 @@ restartBtn.addEventListener("click", function (){
 });
 
 musicBtn.addEventListener("click", () => {
-    console.log("clicked");
-    game.song.onclick = function() {
-        game.song.paused ? game.song.play() : game.song.pause();
-    }
+    game.song.pause();
 });
         /*Make the player jump */
 document.addEventListener("keydown", (event) =>{

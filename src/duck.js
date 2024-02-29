@@ -5,7 +5,6 @@ class Duck {
         playerTop,
         playerWidth,
         playerHeight,
-        imgSrc
         ) {
         this.gameScreen = gameScreen;
         this.left = playerLeft;
@@ -14,8 +13,10 @@ class Duck {
         this.height = playerHeight;
         this.directionY = 0;
         //creating the element, setting the src and everything else
+        this.duckImg = ["../img/yellow-duck.png", "../img/yellow-duck-moving.png"];
         this.duckPlayer = document.createElement("img");
-        this.duckPlayer.src = [imgSrc, imgSrc];
+        this.duckImgIndex = 0;
+        this.duckPlayer.src = this.duckImg[this.duckImgIndex];
         this.duckPlayer.style.position = "absolute";
         this.duckPlayer.style.width = `${this.width}px`;
         this.duckPlayer.style.height = `${this.height}px`;

@@ -1,22 +1,42 @@
+@font-face {
+    font-family: '04B_30__';
+    src: url(./04B_30__.TTF);
+}
+
+@font-face {
+    font-family: 'dogica';
+    src: url(./dogica.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./img/landscape-barn-tractor-byday.jpg);
+    background: url(./img/landscape-barn-tractor-byday.jpg);
     background-size: cover;
     background-position: 0 -6em;
     background-repeat: no-repeat;
     background-color: rgb(110,125,148);
-    /*animation: slide 10s linear infinite;*/
+    
 }
-/* @keyframes slide {
+/* #sliding-bg{
+    background: 
+    url(./img/landscape-barn-tractor-byday.jpg) 
+    url(./img/countryside-landscape-farm-day.jpg)
+    url(./img/landscape-barn-by-night.jpg)
+    url(./img/landscape-by-night.jpg)
+    url(./img/landscape-sun-rising.jpg)
+    repeat-x;
+    animation: slide 60s linear infinite;
+}
+@keyframes slide {
     0% {
-      background-position: 1300px 0;
+        transform: translate3d(0, 0, 0)
     }
-    95% {
+    /* 95% {
       background-position: 0 0;
-    }
-    100% {
-      background-position: 0 0;
+    } */
+    /*100% {
+        transform: translate3d(-1692px, 0, 0);
     }
   } */
          
@@ -33,32 +53,63 @@ body {
 #fixed-header h1{
     display: flex;
     justify-content: center;
+    
 
+}
+h1 {
+    font-family: '04B_30__';
+    color: #be4c5c;
+    font-size: 3em;
+}
+
+button{
+    border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
 }
 
 #buttons{
     display: flex;
     justify-content: center;
+    
 }
 
-#start-game {
-    margin-right: 2em;
+#start-game img{
     width : 8em;
-    height : 3em;
+    height : 2.5em;
 }
 
 #restart-game {
     display: none;
     margin-right: 2em;
-    width : 8em;
-    height : 3em;
-}
-
-#music {
     width : 6em;
     height : 3em;
 }
+
+#restart-game img{
+    width: 8em;
+    height:2.5em;
+}
+
+#music {
+    display: none;
+    width : 6em;
+    height : 3em;
+}
+
+#music img{
+    width: 3em;
+    height: 3em;
+}
                         /**********GAME BLOCK***********/
+
+
+p{
+    font-family: 'dogica';
+    padding-top: 0.5em;
+    padding-left: 4em;
+}
 
 #splash-screen{
     width : 100%;
@@ -84,15 +135,15 @@ body {
 }
 
 #game-over-txt{
-    padding-top: 1em;
-    padding-left: 10.5em;
+    padding-top: 0.5em;
+    padding-left: 8.5em;
     font-size: 48px;
     
 }
 
 .player-splash{
     height: 4em;
-    margin-top: 19.6em;
+    margin-top: 17.6em;
     margin-left: 25em;
 }
 
