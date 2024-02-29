@@ -17,3 +17,5 @@ The more you collect food, the more you score points but also fuller will be Duc
 But be careful, Ducky only has 2 lifes (which is already awesome for a chick🪄)
 
 ### I hope you will enjoy my game, thanks for reading ✨
+# To play -> https://mimibsn.github.io/farm-adventures/
+
